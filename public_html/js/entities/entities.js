@@ -12,7 +12,7 @@ game.PlayerEntity = me.Entity.extend({
                 }
         }]);
         
-        
+        this.body.setVelocity(5, 20);
 },
     update: function(delta){
         if(me.input.isKeyPressed("right")){
