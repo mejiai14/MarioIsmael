@@ -6,14 +6,24 @@
  <tileset firstgid="170" name="meta-tiles" tilewidth="70" tileheight="70">
   <image source="../img/meta-tiles.png" width="350" height="70"/>
  </tileset>
- <layer name="background" width="16" height="9">
+ <layer name="background3" width="16" height="9">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFQxFYUajfEkr7ALEvmdgPiAHUfAVE
+   eJxjYBgFo4A4IALFyAAABRAAKQ==
   </data>
  </layer>
- <layer name="collision" width="16" height="9" visible="0">
+ <layer name="background2" width="16" height="9">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFwwWsI1MPJRgAwucLjw==
+   eJwTYWBgEBnFoxgPDsbBBmEAzEgLvw==
+  </data>
+ </layer>
+ <layer name="background1" width="16" height="9" opacity="0.98">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFQxFYUajfEkr7ALEvAewExMFQ7IgmBwDTjAU4
+  </data>
+ </layer>
+ <layer name="collision" width="16" height="9" opacity="0.09">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFIxmsIxLjUg8AVicJhQ==
   </data>
  </layer>
  <objectgroup name="Trigger-entities">
@@ -31,4 +41,9 @@
    </properties>
   </object>
  </objectgroup>
+ <layer name="foreground1" width="16" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFgxkwEamuGIdebPoLyXcOBgAAXHwA6w==
+  </data>
+ </layer>
 </map>
