@@ -5,6 +5,23 @@
  </tileset>
  <tileset firstgid="170" name="meta-tiles" tilewidth="70" tileheight="70">
   <image source="../img/meta-tiles.png" width="350" height="70"/>
+  <tile id="4">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="175" name="background-tiles" tilewidth="70" tileheight="70">
+  <image source="../img/background-tiles.png" width="910" height="910"/>
+ </tileset>
+ <tileset firstgid="344" name="meta-tiles" tilewidth="70" tileheight="70">
+  <image source="../img/meta-tiles.png" width="350" height="70"/>
+ </tileset>
+ <tileset firstgid="349" name="background-tiles" tilewidth="70" tileheight="70">
+  <image source="../img/background-tiles.png" width="910" height="910"/>
+ </tileset>
+ <tileset firstgid="518" name="background-tiles" tilewidth="70" tileheight="70">
+  <image source="../img/background-tiles.png" width="910" height="910"/>
  </tileset>
  <layer name="background3" width="16" height="9">
   <data encoding="base64">
