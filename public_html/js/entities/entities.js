@@ -23,15 +23,20 @@ game.PlayerEntity = me.Entity.extend({
     update: function(delta){
         if(me.input.isKeyPressed("right")){
             this.body.vel.x += this.body.accel.x * me.timer.tick;
-           
+            this.flipX(false);
+        }else if(me.input.isKeyPressed("left")){
+            this.body.vel.x -= this.body.accel.x * me.timer.tick;
+            this.flipX(true);          
         }else{
             this.body.vel.x = 0;
-            
-            if (me.input.isKeyPressed("down")){
+        }
+        
+        if(me.input.isKeyPressed("up")){
+            if(!this.body.jumping && !this.body.falling){
+                this.body.jumping = true;
+                this.body.vel.y -= this.body.accel.y * me.timer.tick;
                 
-            }else{
-                this.body.vel.x = 0;
-            }
+            }       
         }
         
         this.body.update(delta);
@@ -71,4 +76,14 @@ game.LevelTrigger = me.Entity.extend ({
         me.state.current().resetPlayer(this.xSpawn, this.ySpawn);
     }
         
+});
+
+game.BadGuy = me.Entity.extend({
+    init: function(x, y, settings) {
+        
+    },
+    
+    update: function () {
+        
+    }
 });
